@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Appreciation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add keyframe animation for button hover */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+        /* Smooth fade-in animation */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-yellow-50 text-black" style="background-image: url('log.jpg'); background-size: cover; background-position: center;">
+    <div class="max-w-4xl mx-auto p-6 bg-pink-400 bg-opacity-70 rounded-lg shadow-lg">
+        <!-- Logo section -->
+        <div class="text-center mb-6">
+            <img src="logo.jpg" alt="Logo" class="mx-auto w-24 h-24 rounded-full fade-in">
+        </div>
+
+        <h1 class="font-bold text-4xl text-center text-white underline bg-pink-800 py-4 rounded-md shadow-md">
+            Farida Bano, Student of GIAIC
+        </h1>
+        
+        <p class="mt-8 text-lg text-center text-emerald-800">
+            "Wishing all my wonderful teachers a very <span class="text-sky-500 font-semibold">Happy Teachers' Day!</span>
+            A heartfelt thank you to all the teachers at GIAIC! You have taught AI courses in such an excellent and 
+            easy-to-understand way, and under your guidance, we are becoming coding experts. Your mentorship is something
+            we need not just today but always. The passion and dedication you bring to teaching are invaluable to us. Wishing
+            all of you a very Happy Teachers' Day!May your wisdom continue to guide and inspire us for years to come. 
+           
+        </p>
+
+        <!-- Button with bounce hover effect -->
+        <div class="mt-10 text-center">
+            <button id="sendWishBtn" class="px-6 py-2 bg-sky-700 text-white font-bold rounded-lg shadow hover:bg-sky-600 transform hover:scale-105 transition-all duration-300 animate-bounce hover:animate-none">
+                Send Best Wishes
+            </button>
+        </div>
+
+        <footer class="mt-12 text-center text-gray-500">
+            &copy; 2024 Farida Bano. All Rights Reserved.
+        </footer>
+    </div>
+
+    <!-- JavaScript to handle button click -->
+    <script>
+        // Function to handle the button click
+        document.getElementById('sendWishBtn').addEventListener('click', function() {
+            // Display a message when the button is clicked
+            alert('Your Best Wishes have been sent!');
+            
+            // You can also log to the console or trigger other functionality
+            console.log('Best wishes sent by Farida Bano!');
+        });
+    </script>
+
+    <!-- Media Queries for responsiveness -->
+    <style>
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            button {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</body>
+</html>
+
